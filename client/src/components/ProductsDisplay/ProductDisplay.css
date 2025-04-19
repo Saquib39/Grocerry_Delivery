@@ -1,0 +1,26 @@
+/* Container for the product section */
+.display_product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Page title and text */
+  .ProductPageTitle {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+    color: #2d3436;
+  }
+  
+  .ProductPageFooter {
+    text-align: center;
+    padding: 40px;
+    font-size: 1rem;
+    color: #777;
+  }
+  

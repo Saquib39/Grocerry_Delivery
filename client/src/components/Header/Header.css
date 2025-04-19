@@ -1,0 +1,91 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    position: relative;
+    margin: 0 50px;
+    height: auto; /* Let content decide height */
+    min-height: 70vh; 
+    background: url('/main_banner_bg.png') no-repeat center center;
+    background-size: contain; /* show full image */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* better for mobile */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    color:  rgba(41, 4, 4, 0.778);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.4); Optional overlay for better text contrast */
+    z-index: 0;
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+  }
+  
+  .header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .header-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+  }
+  
+  .cta-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .header {
+        background: url('/main_banner_bg_sm.png') no-repeat center center;
+        background-size: cover;
+        background-attachment: scroll;
+        width: 100vw;
+        margin: 0;
+      }
+    .header-title {
+      font-size: 2.2rem;
+    }
+  
+    .header-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .cta-btn {
+      padding: 10px 18px;
+      font-size: 0.9rem;
+    }
+  }
+  

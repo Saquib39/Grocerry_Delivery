@@ -1,0 +1,10 @@
+/* Home.css */
+.home-container {
+    transition: opacity 0.3s ease;
+  }
+  
+  .blur-background {
+    opacity: 0.3;
+    pointer-events: none; /* Prevent clicks while login is open */
+  }
+  

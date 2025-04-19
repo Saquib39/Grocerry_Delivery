@@ -1,0 +1,74 @@
+.footer-container {
+  background-color: rgb(209, 255, 222);
+  color: black;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 160px;
+  max-width: 200px;
+  text-align: left;
+}
+
+.footer-section h4 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #0b3d2e;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: rgb(49, 46, 46);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  color: #151414;
+}
+
+/* Brand column takes more space */
+.footer-brand {
+  flex: 2;
+  max-width: 300px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+  mix-blend-mode: multiply;
+}
+
+.footer-brand p {
+  color: #2d2828;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(15, 15, 15, 0.1);
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #2f2929;
+}

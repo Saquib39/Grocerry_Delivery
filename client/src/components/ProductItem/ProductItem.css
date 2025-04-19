@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProductItem {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  position: relative;
+}
+
+.ProductItem:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+.item-counter span.quantity {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.item-counter span.quantity.bump {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+.ProductItem img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.ProductItem span {
+  font-size: 1rem;
+  color: #333;
+}
+
+.ProductItem .rating {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProductItem .rating img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Cart action container at bottom-right */
+.cart-action {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+/* Add button styling */
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #e0f8e9;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-to-cart:hover {
+  background-color: #c9f0d7;
+}
+
+.add-to-cart img {
+  width: 18px;
+  height: 18px;
+}
+
+.add-to-cart span.add-text {
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Counter button */
+.item-counter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e0f8e9;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.item-counter button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2ecc71;
+  cursor: pointer;
+}
+
+.item-counter span.quantity {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Price Styling */
+.original-price {
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.offerPrice {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #27ae60;
+  text-decoration: line-through;
+}
+/* .quantity{
+  text-decoration: none;
+} */
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .ProductItem {
+    width: 100%;
+  }
+}

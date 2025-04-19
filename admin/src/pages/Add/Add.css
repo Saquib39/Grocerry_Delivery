@@ -1,0 +1,111 @@
+.add {
+  padding: 2rem;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: auto;
+}
+
+form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-img-upload label {
+  display: inline-block;
+  cursor: pointer;
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  padding: 1rem;
+  background: #f3f4f6;
+  transition: border 0.3s ease;
+}
+
+.add-img-upload label:hover {
+  border-color: #4ade80;
+}
+
+.add-img-upload img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.add-img-upload p {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.add-product-name input,
+.add-product-description textarea,
+.add-price input,
+.add-category select {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus,
+.add-price input:focus,
+.add-category select:focus {
+  border-color: #4ade80;
+}
+
+.add-category-price {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.add-category,
+.add-price {
+  flex: 1 1 30%;
+  min-width: 150px;
+}
+
+.add-btn {
+  padding: 12px 24px;
+  background-color: #4ade80;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.add-btn:hover {
+  background-color: #22c55e;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .add-category-price {
+    flex-direction: column;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+
+  .add-img-upload img {
+    max-height: 140px;
+  }
+}

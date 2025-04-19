@@ -1,0 +1,24 @@
+# Ignore node_modules in all sub-projects
+**/node_modules/
+
+# Ignore .env files in all sub-projects
+**/.env
+
+# Ignore log files
+*.log
+
+# Ignore build/dist/output folders (if any)
+**/dist/
+**/build/
+
+# macOS system files
+.DS_Store
+
+# Vite cache
+**/.vite/
+
+# VSCode settings (optional but recommended if you're working in teams)
+.vscode/
+
+# Ignore lock file if you don't want to version it (optional)
+# package-lock.json
